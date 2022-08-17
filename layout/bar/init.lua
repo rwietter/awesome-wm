@@ -27,10 +27,11 @@ awful.screen.connect_for_each_screen(function(s)
 	local taglist = require("layout.bar.taglist")(s)
 
 	-- launcher
+	-- Icons: 
 	local launcher = wibox.widget {
 		widget = wibox.widget.textbox,
-		markup = helpers.colorize_text("", beautiful.fg_color),
-		font = beautiful.icon_var .. "21",
+		markup = helpers.colorize_text("", beautiful.fg_color),
+		font = beautiful.icon_var .. "25",
 		align = "center",
 		valign = "center"
 	}
