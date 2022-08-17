@@ -33,7 +33,7 @@ local icon = wibox.widget {
 -- ram
 local coretemps = watch('bash -c /home/rwietter/.config/awesome/scripts/coretemps.sh'
 	, 5, function(widget, stdout)
-		widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", ""), beautiful.bg_color)
+		widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", " "), beautiful.bg_color)
 	end, wibox.widget {
 		font = beautiful.font_var .. "13",
 		widget = wibox.widget.textbox,

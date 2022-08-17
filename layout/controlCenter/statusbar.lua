@@ -99,8 +99,6 @@ end)
 
 ---------------------------------------------------------- EOF Battery
 
-
-
 -- clock
 local clock = wibox.widget {
 	widget = wibox.widget.textclock,

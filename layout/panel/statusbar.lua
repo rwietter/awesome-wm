@@ -50,5 +50,5 @@ return wibox.widget {
 		layout = wibox.layout.align.horizontal
 	},
 	layout = wibox.layout.fixed.vertical,
-	forced_height = dpi(20)
+	forced_height = dpi(40)
 }

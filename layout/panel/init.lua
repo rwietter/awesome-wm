@@ -107,7 +107,7 @@ awful.screen.connect_for_each_screen(function(s)
 			readwrite.write("state", "open")
 		else
 			awesome.emit_signal("panel::extras", false)
-			panel_info.height = dpi(580)
+			panel_info.height = dpi(300)
 			readwrite.write("state", "closed")
 		end
 		slide_right.target = s.geometry.height -
@@ -124,7 +124,7 @@ awful.screen.connect_for_each_screen(function(s)
 				spacing = dpi(24)
 			},
 			widget = wibox.container.margin,
-			margins = dpi(20)
+			margins = dpi(30)
 		},
 		{
 			statusline,
@@ -143,7 +143,7 @@ awful.screen.connect_for_each_screen(function(s)
 		panel_info.height = dpi(715)
 	else
 		awesome.emit_signal("panel::extras", false)
-		panel_info.height = dpi(580)
+		panel_info.height = dpi(300)
 	end
 	--------------------------------------------------------
 
